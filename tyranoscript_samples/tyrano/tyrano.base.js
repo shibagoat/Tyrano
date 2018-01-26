@@ -15,7 +15,12 @@ tyrano.base ={
     setBaseSize:function(width,height){
         
         this.tyrano.get(".tyrano_base").css("width",width).css("height",height).css("background-color","black");
-            
+        
+        //NW.js 以外の場合。absolute
+        if(!$.isNWJS()){
+            $(".tyrano_base").css("position","absolute");
+        }
+        
     },
     
     //画面サイズをぴったりさせます
@@ -71,11 +76,11 @@ tyrano.base ={
                    }
                    
                    $(".tyrano_base").css("transform", "scale(" + scale_f + ") ");
-                        if (parseInt(view_width) < parseInt(width)) {
-                            if (scale_f < 1) {
-                                window.scrollTo(width, height);
-                            }
+                   if (parseInt(view_width) < parseInt(width)) {
+                        if (scale_f < 1) {
+                            window.scrollTo(width, height);
                         }
+                   }
 
             }, 100);        	
             

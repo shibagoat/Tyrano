@@ -1,31 +1,31 @@
-;==============================
-; 冒頭の説明画面
-;==============================
 
-;テキストエリアを表示する
-[bg storage="room.jpg"]
-[layopt layer="message0" visible=true]
+; == title.ks ==============================================
 
-;キャラクター定義
-[chara_new name="yuri" storage="chara/yuri_normal.png" jname="ゆり"]
+; あいさつ画面を作成するシナリオファイルです。
 
-;表情の登録
-[chara_face name="yuri" face="defiantly" storage="chara/yuri_defiantly.png"]
-[chara_face name="yuri" face="shy" storage="chara/yuri_shy.png"]
-[chara_face name="yuri" face="staring_eyes" storage="chara/yuri_staring_eyes.png"]
-[chara_face name="yuri" face="anger" storage="chara/yuri_anger.png"]
-
-[chara_show name="yuri" top=60 left=330]
-
-このゲームはティラノスクリプトの動作サンプル集です[p]
-
-[chara_mod name="yuri" face="staring_eyes"]
-
-本ゲームのスクリプトコードはすべてダウンロードできます。[p]
-コメントがタップリ入っているコードなので[p]
-ゲーム制作の上で、参考になると思います。[p]
-
-;選択画面へ移動
-[jump storage="select.ks"]
+; ==========================================================
 
 
+
+; ----------------------------------------------------------
+*Start
+; ----------------------------------------------------------
+
+
+; [bg] 背景を表示します。
+; 時間は700ミリ秒、使用する画像はrouka.jpg。
+[bg time="700" storage="title.jpg"]
+
+;クリック待ち
+[l]
+
+;locate 表示位置の指定
+[locate x=350 y=300]
+;button設置 初めから
+[button graphic="button_title_start.gif" storage="select.ks"]
+
+[locate x=350 y=250]
+[button graphic="button_title_cg.gif" storage="cg.ks"]
+
+;ゲーム入力待ち
+[s]
