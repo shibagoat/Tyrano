@@ -12,7 +12,7 @@
 
 
 ; [title] タイトルバーに表示されるテキストを変更します。
-[title name="ティラノスクリプト｜サンプルテクニック集１"]
+[title name="名称「仮」"]
 
 ; [call]x3 設定用サブルーチンを3つ呼びます。
 [call target="*Sub_Layer"    ]

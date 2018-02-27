@@ -25,6 +25,7 @@
 [button graphic="button_title_start.gif" storage="select.ks"]
 
 [locate x=350 y=250]
+;button設置 CGモード
 [button graphic="button_title_cg.gif" storage="cg.ks"]
 
 ;ゲーム入力待ち

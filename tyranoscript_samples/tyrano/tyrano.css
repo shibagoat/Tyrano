@@ -95,6 +95,7 @@ abbr,acronym{
 }
 
 /* セーブデータのサムネイル部分の設定 */
+/* セーブデータの画面設定？ */
 .save_list_item_thumb {
 	display: table-cell;
 	width: 96px;
@@ -104,9 +105,9 @@ abbr,acronym{
 	border-bottom: 1px dotted #CCC;
 
 }
-
+/*セーブ・ロードのイメージ*/
 .save_list_item_thumb img {
-	width: 96px;
+	width: 120px;
 	height: 72px;
 	-webkit-border-radius: 5px; 
 	-moz-border-radius: 5px;

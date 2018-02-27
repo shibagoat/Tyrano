@@ -92,7 +92,7 @@ tf.text_skip ='OFF'
 ;---------------------------------------------------------------------------
 
 [macro name="bgm_volume_button"]
-[button name="& 'bgmvol, bgmvol_' + mp.volume " fix="true" target="*vol_bgm_change" graphic="config/c_btn.png" width="35" height="35" x="& mp.index * 40 + 300 " y="170" exp="& 'tf.current_bgm_vol = ' + mp.volume"]
+[button name="& 'bgmvol, bgmvol_' + mp.volume " fix="true" target="*vol_bgm_change" graphic="config/c_btn.png" width="35" height="35" x="& mp.index * 53 + 407 " y="193" exp="& 'tf.current_bgm_vol = ' + mp.volume"]
 [endmacro]
 [bgm_volume_button index=" 0" volume=" 10"]
 [bgm_volume_button index=" 1" volume=" 20"]
